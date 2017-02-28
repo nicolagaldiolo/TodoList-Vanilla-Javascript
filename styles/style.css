@@ -1,0 +1,122 @@
+html,
+body{
+  background: #fcfcfc;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: rgba(0,0,0,0.87);
+}
+
+:focus{
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(255,255,255,.5);
+}
+::-moz-placeholder {
+  color: rgba(255,255,255,.5);
+}
+:-ms-input-placeholder {
+  color: rgba(255,255,255,.5);
+}
+:-moz-placeholder {
+  color: rgba(255,255,255,.5);
+}
+
+.todoListContent{
+  width:90%;
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+ul#todoList{
+  list-style: none;
+  padding: 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  margin:0;
+}
+
+ul#todoList li{
+  background-color: #fff;
+  line-height: 1.5rem;
+  padding: 10px 20px;
+  margin: 0;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+}
+
+ul#todoList li:first-child{
+  background: #26a69a;
+  padding: 20px;
+}
+
+ul#todoList li:last-child{
+  border-bottom: 0;
+}
+
+ul#todoList li input[type="text"]{
+  width: 100%;
+  padding:10px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 1em;
+  border:0;
+  border-bottom: 1px solid #fff;
+  color:#fff;
+  background: none;
+}
+
+ul#todoList li.completed{
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+ul#todoList li.hidden{
+  display:none;
+}
+
+ul#todoList li i.todoCheck{
+  position: absolute;
+  top:10px;
+  left:10px;
+  width:16px;
+  height:16px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+  background: transparent;
+  transition: background-color 0.3s ease;
+}
+
+ul#todoList li.completed i.todoCheck{
+  background: #000;
+}
+
+ul#todoList li em.deleteItem{
+  position: absolute;
+  right: 0;
+  top: 6px;
+  font-style: normal;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 0;
+  width: 30px;
+  font-size: 1.5em;
+}
+
+button{
+  padding: 12px;
+  margin-top: 20px;
+  background: #DFDFDF;
+  border: 0;
+  display: block;
+  width: 100%;
+  color: #9F9F9F;
+  font-size: 1em;
+  border-radius: 2px;
+}
